@@ -8,8 +8,8 @@
   font-family: 'JetBrains Mono', monospace;
 }
 
-a {text-decoration:none;color:inherit;}
-
+a { text-decoration:none;color:inherit; }
+.container { align-items:center; }
 .title-bk {
   font-size:100px;
   font-family: 'Ubuntu Mono', monospace;
