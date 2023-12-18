@@ -21,7 +21,6 @@
 }
 .header-bk {
   display: inline-block;
-  box-shadow: 5px 10px;
 }
 .header-bk p {
   display: inline; /* or inline-block */
