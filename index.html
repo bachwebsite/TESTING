@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space Website</title>
     <style>
-       body {
+body {
     font-family: 'Orbitron', sans-serif;
     background-color: #000;
     color: #fff;
@@ -22,7 +22,6 @@ header {
 
 nav {
     display: flex;
-    font-family: 'JetBrains Mono', monospace;
     justify-content: space-around;
     padding: 10px;
     background-color: #555;
@@ -38,11 +37,10 @@ nav a {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
-    font-family: 'JetBrains Mono', monospace;
 }
 
 .card {
-    width: 200px;
+    width: calc(16.6667% - 40px); /* Adjust the width and margin accordingly */
     height: 200px;
     margin: 20px;
     overflow: hidden;
@@ -70,7 +68,6 @@ nav a {
     transform: translate(-50%, -50%);
     text-align: center;
     opacity: 0;
-    font-family: 'JetBrains Mono', monospace;
     transition: opacity 0.5s;
 }
 
@@ -81,7 +78,6 @@ nav a {
 .card:hover {
     opacity: 0.8; /* Adjust the opacity level as desired */
 }
-
     </style>
 </head>
 <body>
