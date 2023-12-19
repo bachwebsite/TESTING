@@ -1,25 +1,114 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="icon" href="favicon.ico">
-    <meta name="f1137c6fd5f1a04e6a9fc030b77a00b3bd7cd5f6" content="f1137c6fd5f1a04e6a9fc030b77a00b3bd7cd5f6" />
-    <title>Breakium | Math</title>
-  </head>
-  <body>
-    <header class="header-bk">
-      <p id="games-bk">Experiences</p>
-      <p id="calc-bk">Calculator</p>
-      <p id="pxy-bk">Questions</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            background-color: #555;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .card {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            overflow: hidden;
+            position: relative;
+            perspective: 1000px;
+            cursor: pointer;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .card:hover img {
+            transform: scale(1.2);
+        }
+
+        .card-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        .card:hover .card-text {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Space Website</h1>
     </header>
-    <hr>
+
+    <nav>
+        <a href="/games">Games</a>
+        <a href="/apps">Apps</a>
+        <a href="/music">Music</a>
+        <a href="/proxy">Proxy</a>
+    </nav>
+
     <div class="container">
-    <div class="title-bk">Are you ready to learn?</div>
-    <div class="undertitle-bk">Breakium offers free tutoring for kids that are falling behind in their math classes, and for teachers to teach what they're paid for.</div>
+        <div class="card" id="games">
+            <img src="https://via.placeholder.com/200" alt="Games">
+            <div class="card-text">Games Directory</div>
+        </div>
+        
+        <div class="card" id="apps">
+            <img src="https://via.placeholder.com/200" alt="Apps">
+            <div class="card-text">Apps Directory</div>
+        </div>
+        
+        <div class="card" id="music">
+            <img src="https://via.placeholder.com/200" alt="Music">
+            <div class="card-text">Music Directory</div>
+        </div>
+        
+        <div class="card" id="proxy">
+            <img src="https://via.placeholder.com/200" alt="Proxy">
+            <div class="card-text">Proxy Directory</div>
+        </div>
     </div>
-    <header id="bottom-header-bk">
-      <p>© Breakium.com 2023</p>
-    </header>
-  </body>
+
+</body>
 </html>
